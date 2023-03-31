@@ -42,7 +42,7 @@ if(count($_POST) > 0) {
     }
 
     if ($erro) {
-        echo "<p><b>ERRO: $erro</b></p>";
+        echo "<p><b>ERRO:$erro</b></p>";
     } else {
         //Query inserindo dados no banco de dados chamado Empresa
         $sql_code = "INSERT INTO clientes (nome,email,telefone,nascimento,DATA) VALUES
