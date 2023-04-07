@@ -3,7 +3,7 @@ Projeto em PHP
 
 <img src="https://becode.com.br/wp-content/uploads/2017/09/php-post-1.png" alt="php">
 
-> Esse projeto tem como base explorar meus conhecimentos em PHP  juntamente com SQL E outras linguagens de programação como javascript,O intuito principal desse sistema e exibir uma tela de adicionar clientes onde esse clientes podem ser visualizados por meio de uma tabela e ser atualizados ou excluidos da tabela. 
+> Esse projeto tem como base explorar meus conhecimentos em PHP  juntamente com SQL e outras linguagens de programação como javascript,O intuito principal desse sistema e exibir uma tela de adicionar clientes onde esse clientes podem ser visualizados por meio de uma tabela e ser atualizados ou excluidos da tabela. 
 
 ### Ajustes e melhorias
 
