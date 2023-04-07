@@ -1,6 +1,7 @@
 <?php
-include "../model/connector.php";
-include "../model/verification.php";
+include ('../model/connector.php');
+include ('../model/verification.php');
+
 ?>
 
 <!DOCTYPE html>
@@ -8,65 +9,71 @@ include "../model/verification.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="../dist/style.css">
+    <script src="./js/jquery.js"></script>
     <title>Cadastrar Cliente</title>
 </head>
-<body>
+<body class="bg-black-300 h-screen">
 
-<nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fechar</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+
+<nav class="p-5 bg-black shadow md:flex md:items-center md:justify-between backdrop-blur-lg">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Arial] cursor-pointer">
+        <h1 class="text-white text-lg text-bold">Logo</h1>
+      </span>
     </div>
-  </div>
-</nav>
 
-<div class ="container">
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
-        <form method="POST" action="concluded.php">
-            <div class="col-12 col=sm-12 col-md-12 col-lg-12 col-xl-6">
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-black w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class=" text-white text-xl hover:text-cyan-500 duration-600">Inicio</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class=" text-white text-xl hover:text-cyan-500 duration-600">Serviços</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class=" text-white text-xl hover:text-cyan-500 duration-600">Sobre</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class=" text-white text-xl hover:text-cyan-500 duration-600">Contato</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-white text-xl hover:text-cyan-500 duration-600">Portfólio</a>
+      </li>
+
+      <button class="bg-cyan-400 text-white font-[Arial] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+        <a href="login.php">Sign in </a></a>
+      </button>
+      <h2 class=""></h2>
+    </ul>
+  </nav>
+  
+<!---carrosel-->
+
+
+
+
+
+<!---fim do carrosel-->
+
+
+
+<!--Form-->
+<div class ="">
+    <div class="grid">
+        <div class="">
+        <form method="POST" action="">
+            <div class="">
                 <label>Nome:</label>
-                <input  name="nome" type="text">
+                <input  class="outline-black" placeholder="Digite seu nome" name="nome" type="text">
             </div>
             <div class="group-input">
                 <label>E-mail:</label>
-                <input  name="email" type="text">
+                <input class="outline-zinc-950" placeholder="Digite seu E-mail" name="email" type="text">
             </div>
             <div class="group-input">
                 <label>Telefone:</label>
-                <input   placeholder="(11) 98888-8888" name="telefone" type="text">
+                <input  class="outline-zinc-950"  placeholder="(11) 98888-8888" name="telefone" type="text">
             </div>
             <div class="group-input">
                 <label>Data de Nascimento:</label>
@@ -85,15 +92,15 @@ include "../model/verification.php";
 <div class="container mt-4">
     <div class="row">
         <div class="link-toGoBack">
-            <a href="../controller/clientes.php">Ver tabela de cadastrados</a>
+            <a  class="hover:text-gray-300" href="../controller/clientes.php">Ver tabela de cadastrados</a>
         </div>
     </div>
 </div>
 
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<!--Jquery-->
+<script src="https://code.jquery.com/jquery-3.6.4.js"
+ integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
 </body>
 </html>
 
