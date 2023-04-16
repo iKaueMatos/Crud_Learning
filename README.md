@@ -11,9 +11,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Tarefa 1 - Criação da estrutura back-end
 - [x] Tarefa 2 - Criação das quers
-- [ ] Tarefa 3
-- [ ] Tarefa 4
-- [ ] Tarefa 5
+- [x] Tarefa 3 - Aprender
 
 ## 💻 Pré-requisitos
 
